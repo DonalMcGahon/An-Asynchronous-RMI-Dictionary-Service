@@ -1,0 +1,31 @@
+package ie.gmit.sw;
+
+import java.rmi.Naming;
+import java.rmi.NotBoundException;
+import java.util.HashMap;
+
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class DictController extends HttpServlet {
+	
+	HashMap<Integer, HttpServletRequest> requests = new HashMap<Integer,HttpServletRequest>();
+	HashMap<Integer, HttpServletResponse> responses = new HashMap<Integer,HttpServletResponse>();
+	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        // reading the user input
+        String inputWord = request.getParameter("inputWord");
+        String wordMeaning = "";
+        DictionaryServer fs;
+		try {
+			fs = (DictionaryServer) Naming.lookup("rmi://127.0.0.1:1099/dictionaryService");
+			wordMeaning = fs.getWordMeaning(inputWord);
+		} catch (NotBoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	
+	
+
+}
