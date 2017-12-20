@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>DictionaryWebApp</display-name>
+    <display-name>DictionaryWebApp</display-name>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.htm</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>default.html</welcome-file>
+        <welcome-file>default.htm</welcome-file>
+        <welcome-file>default.jsp</welcome-file>
+    </welcome-file-list>
+    <servlet>
+        <servlet-name>Dictionary</servlet-name>
+        <servlet-class>gmit.DictController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Dictionary</servlet-name>
+        <url-pattern>/DictionaryServlet</url-pattern>
+    </servlet-mapping>
+    
+        <servlet>
+        <servlet-name>DictionaryAdd</servlet-name>
+        <servlet-class>gmit.DictControllerAdd</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DictionaryAdd</servlet-name>
+        <url-pattern>/DictionaryServletAdd</url-pattern>
+    </servlet-mapping>
+    
+            <servlet>
+        <servlet-name>DictionaryDelete</servlet-name>
+        <servlet-class>gmit.DictControllerDelete</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DictionaryDelete</servlet-name>
+        <url-pattern>/DictionaryServletDelete</url-pattern>
+    </servlet-mapping>
+            <servlet>
+        <servlet-name>DictionaryModify</servlet-name>
+        <servlet-class>gmit.DictControllerModify</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DictionaryModify</servlet-name>
+        <url-pattern>/DictionaryServletModify</url-pattern>
+    </servlet-mapping>
+</web-app>
