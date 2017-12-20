@@ -1,6 +1,11 @@
 # An-Asynchronous-RMI-Dictionary-Service
 
 ***Project given to me by Lecture Patrick Mannion for the module Distributed Systems***
+
+<p align="center">
+  <img width="260" height="200" src="https://s.cafebazaar.ir/1/icons/Ali.Dejbord.ComDic_512x512.png">
+</p>
+
 ## Project Overview
 You are required to use the Servlet/JSP and Java RMI frameworks to develop a remote, asynchronous dictionary
 lookup service. A JSP page should provide users with the ability to specify a string which will be checked
@@ -28,3 +33,10 @@ JSP have access to the entire family of Java APIs, including the JDBC API to acc
 
 The Apache Tomcat® software is an open source implementation of the Java Servlet, JavaServer Pages, Java Expression Language and Java WebSocket technologies.
 For this project I used Apache Tomcat® v9.0.
+
+## Java Servlet
+![image](https://user-images.githubusercontent.com/14197773/34214677-1679f6aa-e59b-11e7-993b-241d1e44484c.png)
+
+A Java servlet is a Java program that extends the capabilities of a server.
+Although servlets can respond to any types of requests, they most commonly implement applications hosted on Web servers.
+Such Web servlets are the Java counterpart to other dynamic Web content technologies such as PHP and ASP.NET.
