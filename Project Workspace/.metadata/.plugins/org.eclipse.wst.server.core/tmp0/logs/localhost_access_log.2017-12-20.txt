@@ -100,3 +100,10 @@
 0:0:0:0:0:0:0:1 - - [20/Dec/2017:22:17:54 +0000] "GET /DictionaryWebApp/DictionaryForm.jsp HTTP/1.1" 200 563
 0:0:0:0:0:0:0:1 - - [20/Dec/2017:22:18:02 +0000] "GET /DictionaryWebApp/DictionaryServlet HTTP/1.1" 200 361
 0:0:0:0:0:0:0:1 - - [20/Dec/2017:22:18:09 +0000] "GET /DictionaryWebApp/DictionaryServlet?inputWord=Keyboard HTTP/1.1" 200 399
+127.0.0.1 - - [20/Dec/2017:22:44:29 +0000] "GET / HTTP/1.1" 404 1073
+0:0:0:0:0:0:0:1 - - [20/Dec/2017:22:44:40 +0000] "GET /DictionaryWebApp/DictionaryServlet HTTP/1.1" 200 361
+0:0:0:0:0:0:0:1 - - [20/Dec/2017:22:44:42 +0000] "GET /DictionaryWebApp/DictionaryForm.jsp HTTP/1.1" 200 563
+127.0.0.1 - - [20/Dec/2017:22:45:49 +0000] "GET / HTTP/1.1" 404 1073
+0:0:0:0:0:0:0:1 - - [20/Dec/2017:22:45:53 +0000] "GET /DictionaryWebApp/DictionaryForm.jsp HTTP/1.1" 200 563
+0:0:0:0:0:0:0:1 - - [20/Dec/2017:22:46:00 +0000] "GET /DictionaryWebApp/DictionaryServlet HTTP/1.1" 200 364
+0:0:0:0:0:0:0:1 - - [20/Dec/2017:22:46:07 +0000] "GET /DictionaryWebApp/DictionaryServlet?inputWord=Map HTTP/1.1" 200 430

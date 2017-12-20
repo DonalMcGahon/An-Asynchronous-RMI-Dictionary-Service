@@ -43,7 +43,7 @@ public class DictController extends HttpServlet {
                     "</head> \n" +
                     "<body> <div align='center'> \n" +
                       "<style= \"font-size=\"12px\" color='black'\"" + "\">" +
-                        "Description: " + wordMeaning +
+                        "Response: " + wordMeaning +
                     "</font></body> \n" +
                   "</html>" 
                 );
