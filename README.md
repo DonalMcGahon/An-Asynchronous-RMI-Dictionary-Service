@@ -18,5 +18,9 @@ RMI is the Java version of what is generally known as a remote procedure call (R
 The object can include information that will change the service that is performed in the remote computer.
 
 ### JSP
+![jsp](https://user-images.githubusercontent.com/14197773/34214078-45b22566-e599-11e7-82b9-f019c50b66ee.png)
+
+Java Server Pages (JSP) is a server-side programming technology that enables the creation of dynamic, platform-independent method for building Web-based applications.
+JSP have access to the entire family of Java APIs, including the JDBC API to access enterprise databases.
 
 ### Apache Tomcat Server
