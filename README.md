@@ -14,13 +14,21 @@ to an in-queue and then returns a job ID to the web client. The web client shoul
 (every 10 seconds) and query if the request has been processed. Client requests in the inQueue should
 be periodically removed and processed (every 10 seconds).
 
-## How to download and run my applications
+## How to download and run my application
 1. Clone the repository to your machine.
 1. Import the folder called "Project Workspace" into Eclipse. (A java Project called DictionaryServer & and a Dynamic Web Application called DictionaryWebApp will be set up).
 1. Go to the DictionaryServer project and run "DictionaryServiceSetup.java" file as a Java Application.
 1. Then go to the Dynamic Web Application and run "DictController.java" file on the server.
 1. Go to the web brower on your machine or on Eclipse and enter in the following URL - "http://localhost:8080/DictionaryWebApp/DictionaryForm.jsp".
 1. Search for a word from the list of words available in the dictionary which are displayed in the README.
+
+## How to install Tomcat Server v9.0 into the project
+1. Have project open in Eclipse
+1. Go to Window -> Preferences
+1. Type in server -> Runtime environment
+1. Add -> Apache Tomcat v9.0
+1. Then go back & Go to Project -> Properties
+1. Java Build Path -> Libraries -> Add Library -> Server Runtime -> Apache Tomcat v9.0 -> Finish -> Apply
 
 ## Information about architecture used in project
 ### RMI (Remote Method Innovation)
