@@ -14,6 +14,9 @@ to an in-queue and then returns a job ID to the web client. The web client shoul
 (every 10 seconds) and query if the request has been processed. Client requests in the inQueue should
 be periodically removed and processed (every 10 seconds).
 
+## How to download and run my applications
+1. 
+
 ## Information about architecture used in project
 ### RMI (Remote Method Innovation)
 ![rmi](https://user-images.githubusercontent.com/14197773/34213651-c84f8a60-e597-11e7-9622-13f5d2226e88.png)

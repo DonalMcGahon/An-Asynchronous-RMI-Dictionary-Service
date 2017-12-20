@@ -11,7 +11,6 @@ public class DictionaryServiceSetup {
 		//interface, it can be referred to as a FileService type.
 		DictionaryServiceImpl fs = new DictionaryServiceImpl();
 
-		//System.out.println(fs.getWordMeaning("Happy"));
 		//Start the RMI registry on port 1099
 		LocateRegistry.createRegistry(1099);
 
