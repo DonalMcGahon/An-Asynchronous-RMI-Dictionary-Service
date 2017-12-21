@@ -12,7 +12,7 @@
  		<H2><B>Dictionary Service</B></H2>
         <form action="DictionaryServlet">
         Enter your query here:  <input type="text" name="inputWord" size="20px"> <br>
-        <input type="submit" value="Submit">
+        <input type="submit" value="submit">
         </form>
  
     </div>

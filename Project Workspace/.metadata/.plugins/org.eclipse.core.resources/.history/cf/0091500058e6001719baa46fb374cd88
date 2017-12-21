@@ -47,9 +47,7 @@ public class DictController extends HttpServlet {
                         "<form action = " +
                         "DictionaryForm.jsp>" +
                         "<input type =" +
-                        "submit value=" +
-                        "Make_another_query" +
-                        "></form>" +
+                        "submit></form>" +
                     "</font></body> \n" +
                   "</html>" 
                 );

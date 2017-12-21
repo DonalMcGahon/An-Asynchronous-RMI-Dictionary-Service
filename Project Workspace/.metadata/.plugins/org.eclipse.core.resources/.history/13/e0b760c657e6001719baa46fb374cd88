@@ -45,11 +45,9 @@ public class DictController extends HttpServlet {
                       "<style= \"font-size=\"12px\" color='black'\"" + "\">" +
                         "Description: " + wordMeaning +
                         "<form action = " +
-                        "DictionaryForm.jsp>" +
+                        "www.google.ie>" +
                         "<input type =" +
-                        "submit value=" +
-                        "Make_another_query" +
-                        "></form>" +
+                        "submit></form>" +
                     "</font></body> \n" +
                   "</html>" 
                 );
