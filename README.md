@@ -30,6 +30,9 @@ be periodically removed and processed (every 10 seconds).
 1. Then go back & Go to Project -> Properties
 1. Java Build Path -> Libraries -> Add Library -> Server Runtime -> Apache Tomcat v9.0 -> Finish -> Apply
 
+## Extra Functionality
+* I added functionality which allows the client JSP to add/remove/modify entries in the dictionary
+
 ## Information about architecture used in project
 ### RMI (Remote Method Innovation)
 ![rmi](https://user-images.githubusercontent.com/14197773/34213651-c84f8a60-e597-11e7-9622-13f5d2226e88.png)
