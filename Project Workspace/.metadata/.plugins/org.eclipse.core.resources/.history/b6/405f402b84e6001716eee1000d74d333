@@ -1,5 +1,5 @@
 package ie.gmit.sw;
-//Reference - Lecture RMI Lab Solution dsRMI_FileServer_Solution
+
 import java.rmi.Naming;
 import java.rmi.registry.LocateRegistry;
 

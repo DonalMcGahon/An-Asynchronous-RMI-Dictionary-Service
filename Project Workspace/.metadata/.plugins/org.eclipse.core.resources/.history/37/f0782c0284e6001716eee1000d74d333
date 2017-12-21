@@ -1,5 +1,5 @@
 package ie.gmit.sw;
-//Reference - Lecture RMI Lab Solution dsRMI_FileServer_Solution
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -23,7 +23,6 @@ public class DictionaryServiceImpl extends UnicastRemoteObject implements Dictio
 	public static HashMap<String,String> getDictionary() {
 		HashMap<String,String> dictionary = new HashMap<String,String>();
 		String dictionaryPath = "Dictionary/MyDictionary.csv";
-		// Reading line by line the word and definitions in Dictionary.csv file
 		try(BufferedReader br = new BufferedReader(new FileReader(dictionaryPath))) {
 			for(String line; (line = br.readLine()) != null; ) {
 				String[] tokens = line.split(",");	
@@ -38,10 +37,6 @@ public class DictionaryServiceImpl extends UnicastRemoteObject implements Dictio
 		}
 		return dictionary;
 	}
-	/* Getting the meaning of the word entered by user
-	 * and putting the thread to sleep for 10 seconds
-	 * to slow the service down and simulate a real asynchronous service.
-	*/
 	@Override
 	public String getWordMeaning(String word) throws RemoteException {	
 		
