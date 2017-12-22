@@ -94,9 +94,6 @@ public class DictionaryServiceImpl extends UnicastRemoteObject implements Dictio
 		}
 	}
 	
-	/*
-	 * Modifying word in dictionary 
-	 */
 	@Override
 	public String modifyWordMeaning(String word, String meaning) throws RemoteException {
 		

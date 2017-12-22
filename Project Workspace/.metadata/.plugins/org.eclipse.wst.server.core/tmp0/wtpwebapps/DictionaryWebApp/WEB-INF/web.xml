@@ -37,4 +37,13 @@
         <url-pattern>/DictionaryServletDelete</url-pattern>
     </servlet-mapping>
     
+    <servlet>
+        <servlet-name>DictionaryModify</servlet-name>
+        <servlet-class>ie.gmit.sw.DictControllerModify</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DictionaryModify</servlet-name>
+        <url-pattern>/DictionaryServletModify</url-pattern>
+    </servlet-mapping>
+    
 </web-app>

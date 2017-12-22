@@ -94,23 +94,6 @@ public class DictionaryServiceImpl extends UnicastRemoteObject implements Dictio
 		}
 	}
 	
-	/*
-	 * Modifying word in dictionary 
-	 */
-	@Override
-	public String modifyWordMeaning(String word, String meaning) throws RemoteException {
-		
-		HashMap<String,String> dictionary = getDictionary();
-		
-		if(dictionary.containsKey(word)){
-			deleteInFile(word);
-			addToFile(word, meaning);
-			return word+" sucessfully modified in dictionary";
-		}else{
-			return "Word does not exist in Dictionary";
-		}
-	}
-	
 	
 	private boolean addToFile(String word, String meaning) {
 		PrintWriter out = null;
