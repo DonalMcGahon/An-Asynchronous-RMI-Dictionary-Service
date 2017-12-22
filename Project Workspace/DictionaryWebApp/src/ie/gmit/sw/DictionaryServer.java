@@ -11,4 +11,6 @@ public interface DictionaryServer extends Remote{
 	
 	public String addWordMeaning(String word, String meaning) throws RemoteException;
 	
+	public String deleteWordMeaning(String word) throws RemoteException;
+	
 }

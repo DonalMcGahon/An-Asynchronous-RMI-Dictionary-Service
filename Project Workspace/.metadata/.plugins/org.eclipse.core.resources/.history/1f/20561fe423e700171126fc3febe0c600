@@ -76,24 +76,6 @@ public class DictionaryServiceImpl extends UnicastRemoteObject implements Dictio
 			}
 	}
 	
-	/*
-	 * Deleting word in dictionary 
-	 */
-	@Override
-	public String deleteWordMeaning(String word) throws RemoteException {	
-		
-		HashMap<String,String> dictionary = getDictionary();
-		
-		if(dictionary.containsKey(word)){
-			if(deleteInFile(word))
-				return word+" sucessfully deleted from dictionary";
-			else
-				return "Error deleting word";
-		}else{
-			return "Word does not exist in Dictionary";
-		}
-	}
-	
 	
 	private boolean addToFile(String word, String meaning) {
 		PrintWriter out = null;
@@ -108,41 +90,6 @@ public class DictionaryServiceImpl extends UnicastRemoteObject implements Dictio
 				out.close();
 			}
 		return flag;
-	}
-	
-	/*
-	 * Deleting word in dictionary file 
-	 */
-	public static boolean deleteInFile(String word){
-
-		Boolean flag = false;
-		try{
-		
-		File inputFile = new File("Dictionary/MyDictionary.csv");
-		File tempFile = new File("Dictionary/temp.csv");
-
-		BufferedReader reader = new BufferedReader(new FileReader(inputFile));
-		BufferedWriter writer = new BufferedWriter(new FileWriter(tempFile));
-
-		
-		String wordToRemove = word;
-		String currentLine;
-
-		while((currentLine = reader.readLine()) != null) {
-		    // trim newline when comparing with lineToRemove
-		    String[] tokens = currentLine.trim().split(",");
-		    if(tokens[0].equals(word)) continue;
-		    writer.write(currentLine + System.getProperty("line.separator"));
-		}
-		writer.close(); 
-		reader.close(); 
-		if (inputFile.exists()) inputFile.delete();
-		   flag = tempFile.renameTo(inputFile);
-
-	} catch (IOException e) {
-		e.printStackTrace();
-	} 
-	return flag;
 	}
 	
 }

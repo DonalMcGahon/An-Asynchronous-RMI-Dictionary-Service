@@ -27,3 +27,9 @@
 0:0:0:0:0:0:0:1 - - [22/Dec/2017:14:19:18 +0000] "GET /DictionaryWebApp/DictionaryServletAdd?word=Network&meaning=a+group+or+system+of+interconnected+people+or+things. HTTP/1.1" 200 433
 0:0:0:0:0:0:0:1 - - [22/Dec/2017:14:19:45 +0000] "GET /DictionaryWebApp/DictionaryServletAdd?word=Connect&meaning=bring+together+or+into+contact+so+that+a+real+or+notional+link+is+established. HTTP/1.1" 200 453
 0:0:0:0:0:0:0:1 - - [22/Dec/2017:14:19:49 +0000] "GET /DictionaryWebApp/DictionaryAdd.jsp? HTTP/1.1" 200 616
+127.0.0.1 - - [22/Dec/2017:14:28:38 +0000] "GET / HTTP/1.1" 404 1073
+0:0:0:0:0:0:0:1 - - [22/Dec/2017:14:28:38 +0000] "GET /DictionaryWebApp/DictionaryServletDelete HTTP/1.1" 200 453
+0:0:0:0:0:0:0:1 - - [22/Dec/2017:14:28:40 +0000] "GET /DictionaryWebApp/DictionaryForm.jsp HTTP/1.1" 200 565
+0:0:0:0:0:0:0:1 - - [22/Dec/2017:14:28:53 +0000] "GET /DictionaryWebApp/DictionaryDelete.jsp HTTP/1.1" 200 553
+0:0:0:0:0:0:0:1 - - [22/Dec/2017:14:29:00 +0000] "GET /DictionaryWebApp/DictionaryServletDelete?word=computer HTTP/1.1" 200 464
+0:0:0:0:0:0:0:1 - - [22/Dec/2017:14:29:05 +0000] "GET /DictionaryWebApp/DictionaryDelete.jsp? HTTP/1.1" 200 553
