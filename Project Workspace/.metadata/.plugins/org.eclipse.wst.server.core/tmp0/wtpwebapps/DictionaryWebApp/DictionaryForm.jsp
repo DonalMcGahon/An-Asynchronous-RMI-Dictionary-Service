@@ -15,6 +15,23 @@
         Enter your query here:  <input type="text" name="inputWord" size="20px"> <br>
         <input type="submit" value="Submit">
         </form>
+        
+        <h3>Options Below</h3>
+        
+        <h5>Add Word to Dictionary</h5>
+        <form action="http://localhost:8080/DictionaryWebApp/DictionaryAdd.jsp">
+		    <input type="submit" value="Add word" />
+		</form>
+		
+		<h5>Delete Word from Dictionary</h5>
+        <form action="http://localhost:8080/DictionaryWebApp/DictionaryDelete.jsp">
+		    <input type="submit" value="Delete word" />
+		</form>
+		
+		<h5>Modify Word in Dictionary</h5>
+        <form action="http://localhost:8080/DictionaryWebApp/DictionaryModify.jsp">
+		    <input type="submit" value="Modify word" />
+		</form>
  
     </div>
 </body>
