@@ -20,7 +20,8 @@ be periodically removed and processed (every 10 seconds).
 1. Go to the DictionaryServer project and run "DictionaryServiceSetup.java" file as a Java Application.
 1. Then go to the Dynamic Web Application and run "DictController.java" file on the server.
 1. Go to the web brower on your machine or on Eclipse and enter in the following URL - "http://localhost:8080/DictionaryWebApp/DictionaryForm.jsp".
-1. Search for a word from the list of words available in the dictionary which are displayed in the README.
+1. Search for a word from the list of words available in the dictionary which are displayed in the README.txt.
+1. Test out the other functionality available, for example - Add, delete or modify a word.
 
 ## How to install Tomcat Server v9.0 into the project
 1. Have project open in Eclipse
