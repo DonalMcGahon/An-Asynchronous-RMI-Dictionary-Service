@@ -18,4 +18,14 @@
         <servlet-name>Dictionary</servlet-name>
         <url-pattern>/DictionaryServlet</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>DictionaryAdd</servlet-name>
+        <servlet-class>ie.gmit.sw.DictControllerAdd</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DictionaryAdd</servlet-name>
+        <url-pattern>/DictionaryServletAdd</url-pattern>
+    </servlet-mapping>
+    
 </web-app>

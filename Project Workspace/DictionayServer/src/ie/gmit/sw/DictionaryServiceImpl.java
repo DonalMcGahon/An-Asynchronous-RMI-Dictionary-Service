@@ -57,5 +57,39 @@ public class DictionaryServiceImpl extends UnicastRemoteObject implements Dictio
 		}else
 			return "Word not found!";
 	}
+
+	/*
+	 * Adding word in dictionary 
+	 */
+	@Override
+	public String addWordMeaning(String word, String meaning) throws RemoteException {
+		
+		HashMap<String,String> dictionary = getDictionary();
+		
+		if(dictionary.containsKey(word)){
+			return "Word already exists";
+		}else
+			if(addToFile(word, meaning)){
+			return word+" sucessfully added to dictionary";
+			} else{
+				return "Error at RMI server updating the dictionary!";
+			}
+	}
+	
+	
+	private boolean addToFile(String word, String meaning) {
+		PrintWriter out = null;
+		Boolean flag = false;
+		try{
+			    out = new PrintWriter(new BufferedWriter(new FileWriter("Dictionary/MyDictionary.csv", true)));
+			    out.print(word+","+meaning+"\r\n");
+			    flag = true;
+			} catch (IOException e) {
+				e.printStackTrace();
+			} finally{
+				out.close();
+			}
+		return flag;
+	}
 	
 }
